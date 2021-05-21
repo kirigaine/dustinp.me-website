@@ -14,38 +14,88 @@
                 <a class="myheader" style="border-bottom-right-radius:25px" href="mailto: thisisntarealemail@gmail.com" target="_top"><b>Contact</b></a>
             </div>
             <div>
-                <h1 style="text-align:center">Software Developer</h1>
+
+                <h1 style="text-align:center">Dustin P - Software Developer</h1>
                 <div class="bio">
+                    <h1>Projects</h1>
+                    <!--Socket Squares Modal-->
+                    <button id="ss_button">Socket Squares</button>
+                    <div id="ss_modal" class="modal">
+                        <div class="modal-body">
+                            <span id="ss_close" class="close-modal">&times;</span>
+                            <h1 style="text-align:center;">Socket Squares</h1>
+                            <p>Description:</p>
+                            <p>Usage:</p>
+                            <a href="">GitHub Repo</a>
+                        </div>
+                    </div>
+                    <button id="idl_button">Idlorcs</button>
+                    <button id="sq_button">Squiggle</button>
+
+
+                    <script>
+                        var ssmodal = document.getElementById("ss_modal");
+                        var ssbutton = document.getElementById("ss_button");
+                        var ssspan = document.getElementById("ss_close");
+
+                        ss_button.onclick = function(){
+                            ss_modal.style.display = "block";
+                        }
+
+                        ssspan.onclick = function(){
+                            ss_modal.style.display="none";
+                        }
+
+                        window.onclick=function(event){
+                            if (event.target == ssmodal){
+                                ss_modal.style.display = "none";
+                            }
+                        }
+
+                    </script>
+                    <!--End Socket Squares Modal-->
+                    <!--Idlorcs Modal-->
+
+                    <!--End Idlorcs Modal-->
+                    <!--Squiggle Modal-->
+                    <!--End Squiggle Modal-->
+
+
                     <h1>Technical Skills</h1>
                     <ul>
                         <li>Git/Jira/Bitbucket</li>
                         <li>Agile/Waterfall</li>
                         <li>Github Actions CI/CD</li>
                         <li>Algorithms</li>
-                        <li>Excel/World/Project</li>
+                        <li>Excel/Word/Project</li>
                         <li>Image Editing</li>
                         <li>UML Diagramming</li>
                         <li>Unity 3D</li>
+                        <li>MySQL</li>
                     </ul>
                     <h1>Programming Languages</h1>
-                    <ul>
-                        <a class="p_languages" href="https://github.com/kirigaine?tab=repositories&q=&type=&language=python&sort=" target="_blank">Python</a><br>
-                        <a href="https://github.com/kirigaine?tab=repositories&q=&type=&language=java&sort=" target="_blank">Java</a>
-                        <a href="https://github.com/kirigaine?tab=repositories&q=&type=&language=c&sort=" target="_blank"> C</a><a> / C++ / </a><a href="https://github.com/kirigaine?tab=repositories&q=&type=&language=c%23&sort=" target="_blank">C#</a>
-                        <li>Visual Basic</li>
-                        <li>MySQL</li>
-                        <li>Assembly</li>
-                        <li>HTML/CSS</li>
-                        <li>PHP</li>
-                        <li>JavaScript</li>
-                    </ul>
+                    <div class="row">
+                        <div class="bio">
+                            <a class="p_languages" href="https://github.com/kirigaine?tab=repositories&q=&type=&language=python&sort=" target="_blank">Python</a><br>
+                            <a class="p_languages" href="https://github.com/kirigaine?tab=repositories&q=&type=&language=java&sort=" target="_blank">Java</a>
+                            <a class="p_languages" href="https://github.com/kirigaine?tab=repositories&q=&type=&language=c&sort=" target="_blank"> C</a><a> / C++ / </a><a class="p_languages" href="https://github.com/kirigaine?tab=repositories&q=&type=&language=c%23&sort=" target="_blank">C#</a>
+                            <a>Visual Basic</a>
+                            <a>Assembly</a>
+                            <a class="p_languages" href="https://github.com/kirigaine?tab=repositories&q=&type=&language=html&sort=" target="_blank">HTML/CSS</a>
+                            <a>PHP</a>
+                            <a class="p_languages" href="https://github.com/kirigaine?tab=repositories&q=&type=&language=javascript&sort=" target="_blank">JavaScript</a>
+                        </div>
+                        <div class="bio">
+                            <p>aaah<br><br></p>
+                        </div>
+                    </div>
                     <h1>Professional Experience</h1>
                     <h1>Leadership Experience</h1>
                     <h1>Projects</h1>
                 </div>
-                <div class="pic">
+                <div class="bio">
                     <img title="Just an absolute lad" src="him.png" alt="Redacted drinking coffee in Toronto">
-                    <p><b>Contact Info:</b><br>Cell Number: (XXX) XXX-XXXX<br>Email: <a id="HE" href="mailto: notarealemailanymore@gmail.com" target="_top">notarealemailanymore@gmail.com</a></p></div>
+                    <p>filler</p></div>
             </div>
         </div>
     </body>
