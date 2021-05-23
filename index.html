@@ -1,104 +1,114 @@
 <!DOCTYPE html>
 <html lang="en-US">
-<head style="padding: 0%; margin: 0%;"><link rel="preconnect" href="https://fonts.gstatic.com"><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Quicksand&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css"></head>
+
+<head style="padding: 0%; margin: 0%;">
+    <title>&lt;/dustinp.me&gt;</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Quicksand&display=swap" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
 
     <body style="margin: 0%;">
 
         <div class="bg_container">
-            <div style="background-color:rgba(30,30,30,0.6); padding-top: 0.2%; padding-bottom: 0.5%;">
-                <a class="myheader" style="margin-left:5px;border-bottom-left-radius:25px;" href="index.html"><b>&lt;/dustinp.me&gt;</b></a>
-                <a class="myheader" href=""><b>Resume</b></a>
-                <a class="myheader" href="" target="_blank"><b>LinkedIn</b></a>
-                <a class="myheader" href="https://github.com/kirigaine" target="_blank"><b>GitHub</b></a>
-                <a class="myheader" style="border-bottom-right-radius:25px" href="mailto: thisisntarealemail@gmail.com" target="_top"><b>Contact</b></a>
-            </div>
-            <div>
 
-                <h1 style="text-align:center">Dustin P - Software Developer</h1>
-                <div class="bio">
-                    <h1>Projects</h1>
-                    <!--Socket Squares Modal-->
-                    <img width="150" height="150" src="images/ss-preview.jpg">
-                    <button id="ss_button">Socket Squares</button>
-                    <div id="ss_modal" class="modal">
-                        <div class="modal-body">
-                            <span id="ss_close" class="close-modal">&times;</span>
-                            <h1 style="text-align:center;">Socket Squares</h1>
-                            <p>Description:</p>
-                            <p>Usage:</p>
-                            <a href="">GitHub Repo</a>
-                        </div>
-                    </div>
-                    <img width="150" height="150" src="images/idlorcs-preview.jpg">
-                    <button id="idl_button">Idlorcs</button>
-                    <img width="150" height="150" src="images/squiggle-preview.jpg">
-                    <button id="sq_button">Squiggle</button>
-
-
-                    <script>
-                        var ssmodal = document.getElementById("ss_modal");
-                        var ssbutton = document.getElementById("ss_button");
-                        var ssspan = document.getElementById("ss_close");
-
-                        ss_button.onclick = function(){
-                            ss_modal.style.display = "block";
-                        }
-
-                        ssspan.onclick = function(){
-                            ss_modal.style.display="none";
-                        }
-
-                        window.onclick=function(event){
-                            if (event.target == ssmodal){
-                                ss_modal.style.display = "none";
-                            }
-                        }
-
-                    </script>
-                    <!--End Socket Squares Modal-->
-                    <!--Idlorcs Modal-->
-
-                    <!--End Idlorcs Modal-->
-                    <!--Squiggle Modal-->
-                    <!--End Squiggle Modal-->
-
-
-                    <h1>Technical Skills</h1>
-                    <ul>
-                        <li>Git/Jira/Bitbucket</li>
-                        <li>Agile/Waterfall</li>
-                        <li>Github Actions CI/CD</li>
-                        <li>Algorithms</li>
-                        <li>Excel/Word/Project</li>
-                        <li>Image Editing</li>
-                        <li>UML Diagramming</li>
-                        <li>Unity 3D</li>
-                        <li>MySQL</li>
-                    </ul>
-                    <h1>Programming Languages</h1>
-                    <div class="row">
-                        <div class="bio">
-                            <a class="p_languages" href="https://github.com/kirigaine?tab=repositories&q=&type=&language=python&sort=" target="_blank">Python</a><br>
-                            <a class="p_languages" href="https://github.com/kirigaine?tab=repositories&q=&type=&language=java&sort=" target="_blank">Java</a>
-                            <a class="p_languages" href="https://github.com/kirigaine?tab=repositories&q=&type=&language=c&sort=" target="_blank"> C</a><a> / C++ / </a><a class="p_languages" href="https://github.com/kirigaine?tab=repositories&q=&type=&language=c%23&sort=" target="_blank">C#</a>
-                            <a>Visual Basic</a>
-                            <a>Assembly</a>
-                            <a class="p_languages" href="https://github.com/kirigaine?tab=repositories&q=&type=&language=html&sort=" target="_blank">HTML/CSS</a>
-                            <a>PHP</a>
-                            <a class="p_languages" href="https://github.com/kirigaine?tab=repositories&q=&type=&language=javascript&sort=" target="_blank">JavaScript</a>
-                        </div>
-                        <div class="bio">
-                            <p>aaah<br><br></p>
-                        </div>
-                    </div>
-                    <h1>Professional Experience</h1>
-                    <h1>Leadership Experience</h1>
+            <div class="container-fluid" style="padding-left:0%; padding-right: 0%;">
+                <div style="background-color:rgba(30,30,30,0.6); padding-top: 0.2%; padding-bottom: 0.5%;">
+                    <a class="myheader" style="margin-left:5px;border-bottom-left-radius:25px;" href="index.html"><b>&lt;/dustinp.me&gt;</b></a>
+                    <a class="myheader" href=""><b>Resume</b></a>
+                    <a class="myheader" href="" target="_blank"><b>LinkedIn</b></a>
+                    <a class="myheader" href="https://github.com/kirigaine" target="_blank"><b>GitHub</b></a>
+                    <a class="myheader" style="border-bottom-right-radius:25px" href="mailto: thisisntarealemail@gmail.com" target="_top"><b>Contact</b></a>
                 </div>
-                <div class="bio">
-                    <img title="Just an absolute lad" src="him.png" alt="Redacted drinking coffee in Toronto">
-                    <p>filler</p></div>
             </div>
+
+            <div>
+                <div class="container-fluid">
+                    <h1 style="text-align:center">Dustin P</h1>
+                    <h3 style="text-align:center">Software Developer</h2>
+                </div>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <!--Left Column-->
+                            <div class="col">
+
+                                <div class="row">
+                                    <div class="container-fluid">
+                                        <h1 style="text-align: center;">Projects</h1>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col">
+                                        <a>
+                                            <img class="project-preview center" src="images/ss-preview.jpg">
+                                        </a>
+                                        <p style="color:black; text-align: center;"><b>Socket Squares</b></p>
+                                    </div>
+                                    <div class="col">
+                                        <a>
+                                            <img class="project-preview center" src="images/idlorcs-preview.jpg">
+                                        </a>
+                                        <p style="color:black; text-align: center;"><b>Idlorcs</b></p>
+                                    </div>
+                                    <div class="col">
+                                        <a>
+                                            <img class="project-preview center" src="images/squiggle-preview.jpg">
+                                        </a>
+                                        <p style="color:black; text-align: center;"><b>Squiggle</b></p>
+                                    </div>   
+                                </div>
+
+                                <div class="row">
+                                    <div class="container-fluid">
+                                        <h1>Technical Skills</h1>
+                                        <ul><b>
+                                            <li>Git/Jira/Bitbucket</li>
+                                            <li>Agile/Waterfall</li>
+                                            <li>Github Actions CI/CD</li>
+                                            <li>Algorithms</li>
+                                            <li>Excel/Word/Project</li>
+                                            <li>Image Editing</li>
+                                            <li>UML Diagramming</li>
+                                            <li>Unity 3D</li>
+                                            <li>MySQL</li>
+                                            </b>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="container-fluid">
+                                        <a class="p_languages" href="https://github.com/kirigaine?tab=repositories&q=&type=&language=python&sort=" target="_blank">Python</a><br>
+                                        <a class="p_languages" href="https://github.com/kirigaine?tab=repositories&q=&type=&language=java&sort=" target="_blank">Java</a>
+                                        <a class="p_languages" href="https://github.com/kirigaine?tab=repositories&q=&type=&language=c&sort=" target="_blank"> C</a><a> / C++ / </a><a class="p_languages" href="https://github.com/kirigaine?tab=repositories&q=&type=&language=c%23&sort=" target="_blank">C#</a>
+                                        <a>Visual Basic</a>
+                                        <a>Assembly</a>
+                                        <a class="p_languages" href="https://github.com/kirigaine?tab=repositories&q=&type=&language=html&sort=" target="_blank">HTML/CSS</a>
+                                        <a>PHP</a>
+                                        <a class="p_languages" href="https://github.com/kirigaine?tab=repositories&q=&type=&language=javascript&sort=" target="_blank">JavaScript</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!--Right Column-->
+                            <div class="col">
+                                <p>hi</p>
+                            </div>
+                        </div>
+                </div>
+            </div>
+
         </div>
     </body>
 </html>
