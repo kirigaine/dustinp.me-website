@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectlist>
+    <project category="python">
+        <title lang="en">Socket Squares</title>
+        <description>test</description>
+        <repo>githublinkhere</repo>
+        <picture_tag>ss</picture_tag>
+    </project>
+
+    <project category="python">
+        <title lang="en">Idlorcs</title>
+        <description>test</description>
+        <repo>githublinkhere</repo>
+        <picture_tag>idl</picture_tag>
+    </project>
+
+    <project category="csharp">
+        <title lang="en">Squiggle</title>
+        <description>test</description>
+        <repo>githublinkhere</repo>
+        <picture_tag>sq</picture_tag>
+    </project>
+</projectlist>

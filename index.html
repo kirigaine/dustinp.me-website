@@ -1,52 +1,303 @@
 <!DOCTYPE html>
 <html lang="en-US">
-<head style="padding: 0%; margin: 0%;"><link rel="preconnect" href="https://fonts.gstatic.com"><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Quicksand&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css"></head>
 
-    <body style="margin: 0%;">
+<head style="padding: 0%; margin: 0%;">
+    <title>&lt;/dustinp.me&gt;</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Quicksand&display=swap" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-        <div class="bg_container">
-            <div style="background-color:rgba(30,30,30,0.6); padding-top: 0.2%; padding-bottom: 0.5%;">
-                <a class="myheader" style="margin-left:5px;border-bottom-left-radius:25px;" href="index.html"><b>&lt;/dustinp.me&gt;</b></a>
-                <a class="myheader" href=""><b>Resume</b></a>
-                <a class="myheader" href="" target="_blank"><b>LinkedIn</b></a>
-                <a class="myheader" href="https://github.com/kirigaine" target="_blank"><b>GitHub</b></a>
-                <a class="myheader" style="border-bottom-right-radius:25px" href="mailto: thisisntarealemail@gmail.com" target="_top"><b>Contact</b></a>
-            </div>
-            <div>
-                <div class="bio">
-                    <h1>Technical Skills</h1>
-                    <ul>
-                        <li>Git/Jira/Bitbucket</li>
-                        <li>Agile/Waterfall</li>
-                        <li>Github Actions CI/CD</li>
-                        <li>Algorithms</li>
-                        <li>Excel/World/Project</li>
-                        <li>Image Editing</li>
-                        <li>UML Diagramming</li>
-                        <li>Unity 3D</li>
-                    </ul>
-                    <h1>Programming Languages</h1>
-                    <ul>
-                        <a class="p_languages" href="https://github.com/kirigaine?tab=repositories&q=&type=&language=python&sort=" target="_blank">Python</a><br>
-                        <a href="https://github.com/kirigaine?tab=repositories&q=&type=&language=java&sort=" target="_blank">Java</a>
-                        <li>C / C++ / C#</li>
-                        <li>Visual Basic</li>
-                        <li>MySQL</li>
-                        <li>Assembly</li>
-                        <li>HTML/CSS</li>
-                        <li>PHP</li>
-                        <li>JavaScript</li>
-                    </ul>
-                    <h1>Professional Experience</h1>
-                    <h1>Leadership Experience</h1>
-                    <h1>Projects</h1>
+<body style="margin: 0%;">
+
+    <header id="header">
+        <div class="container-fluid" style="padding-left:0%; padding-right: 0%;">
+            <p
+                style="background-color:#b4b4b4; color:black; margin:0px;border-style: groove; border-color: rgba(255,255,255,0.2); border-radius:3px; border-bottom-left-radius:25px; padding:15px 25px; display:inline-block;">
+                <b>&lt;/dustinp.me&gt;</b></p>
+            <a class="header-button" href=""><b>Resume</b></a>
+            <a class="header-button" href="" target="_blank"><b>LinkedIn</b></a>
+            <a class="header-button" href="https://github.com/kirigaine" target="_blank"><b>GitHub</b></a>
+            <a class="header-button" style="border-bottom-right-radius:25px" href="mailto: thisisntarealemail@gmail.com"
+                target="_top"><b>Contact</b></a>
+        </div>
+    </header>
+
+    <div class="container-fluid">
+
+        <div class="row">
+            <!--Left Column-->
+            <div class="col-sm-8">
+
+                <div class="row">
+                    <div class="container-fluid">
+                        <h1 style="text-align: center;">Projects</h1>
+                    </div>
                 </div>
-                <div class="pic">
-                    <img title="Just an absolute lad" src="him.png" alt="Redacted drinking coffee in Toronto">
-                    <p><b>Contact Info:</b><br>Cell Number: (XXX) XXX-XXXX<br>Email: <a id="HE" href="mailto: notarealemailanymore@gmail.com" target="_top">notarealemailanymore@gmail.com</a></p></div>
+
+                <div class="row">
+                    <div class="col">
+                        <a>
+                            <img id="ss_button" class="project-preview center" data-toggle="modal"
+                                data-target="#ss_modal" src="images/ss-preview.jpg">
+                            <div id="ss_modal" class="modal fade">
+                                <div class="modal-dialog modal-xl">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h2 class="modal-title" style="margin: auto;">Socket Squares</h2>
+                                            <button type="button" class="close" style="margin:0px;"
+                                                data-dismiss="modal">&times;</button>
+                                        </div>
+                                        <div class="modal-body">
+											<iframe class="center" width="800" height="600" src="https://www.youtube.com/embed/rvXVAmvVa7w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                            <p>Description:</p>
+											<p>Language(s) Python:</p>
+                                            <p>Usage:</p>
+                                            <a href="https://github.com/kirigaine/Socket-Squares">GitHub Repo</a>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger"
+                                                data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </a>
+                        <p style="color:black; text-align: center;"><b>Socket Squares</b></p>
+                    </div>
+                    <div class="col">
+                        <a>
+                            <img class="project-preview center" data-toggle="modal" data-target="#idl_modal"
+                                src="images/idlorcs-preview.jpg">
+                            <div id="idl_modal" class="modal fade">
+                                <div class="modal-dialog modal-xl">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h2 class="modal-title" style="margin: auto;">Idlorcs</h2>
+                                            <button type="button" class="close" style="margin:0px;"
+                                                data-dismiss="modal">&times;</button>
+                                        </div>
+                                        <div class="modal-body">
+											<iframe class="center" width="800" height="600" src="https://www.youtube.com/embed/rvXVAmvVa7w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+											<p>Description:</p>
+											<p>Language(s): Python</p>
+                                            <p>Usage:</p>
+                                            <a href="https://github.com/kirigaine/Idlorcs-Idle-Clicker-Game">GitHub Repo</a>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger"
+                                                data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <p style="color:black; text-align: center;"><b>Idlorcs</b></p>
+                    </div>
+                    <div class="col">
+                        <a>
+                            <img class="project-preview center" data-toggle="modal" data-target="#sq_modal"
+                                src="images/squiggle-preview.jpg">
+                            <div id="sq_modal" class="modal fade">
+                                <div class="modal-dialog modal-xl">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h2 class="modal-title" style="margin: auto;">Squiggle</h2>
+                                            <button type="button" class="close" style="margin:0px;"
+                                                data-dismiss="modal">&times;</button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <iframe class="center" width="800" height="600" src="https://www.youtube.com/embed/rvXVAmvVa7w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                            <p>Description:</p>
+											<p>Language(s): C#</p>
+                                            <p>Usage:</p>
+                                            <a href="">GitHub Repo</a>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger"
+                                                data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <p style="color:black; text-align: center;"><b>Squiggle</b></p>
+                    </div>
+                </div>
+
+					<div class="row">
+						<div class="col">
+							<a>
+								<img id="tt_button" class="project-preview center" data-toggle="modal"
+									data-target="#tt_modal" src="images/tdt-preview.jpg">
+								<div id="tt_modal" class="modal fade">
+									<div class="modal-dialog modal-xl">
+										<div class="modal-content">
+											<div class="modal-header">
+												<h2 class="modal-title" style="margin: auto;">Tank Test</h2>
+												<button type="button" class="close" style="margin:0px;"
+													data-dismiss="modal">&times;</button>
+											</div>
+											<div class="modal-body">
+												<iframe class="center" width="800" height="600" src="https://www.youtube.com/embed/rvXVAmvVa7w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+												<p>Description:</p>
+												<p>Language(s): GDScript</p>
+												<p>Usage:</p>
+												<a href="https://github.com/kirigaine/CSharp-Squiggle-Snake-Game">GitHub Repo</a>
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-danger"
+													data-dismiss="modal">Close</button>
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</a>
+							<p style="color:black; text-align: center;"><b>Tank Test</b></p>
+						</div>
+						<div class="col">
+							<a>
+								<img class="project-preview center" data-toggle="modal" data-target="#rts_modal"
+									src="images/rtst-preview.jpg">
+								<div id="rts_modal" class="modal fade">
+									<div class="modal-dialog modal-xl">
+										<div class="modal-content">
+											<div class="modal-header">
+												<h2 class="modal-title" style="margin: auto;">RTS Test</h2>
+												<button type="button" class="close" style="margin:0px;"
+													data-dismiss="modal">&times;</button>
+											</div>
+											<div class="modal-body">
+												<iframe class="center" width="800" height="600" src="https://www.youtube.com/embed/rvXVAmvVa7w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+												<p>Description:</p>
+												<p>Language(s): GDScript</p>
+												<p>Usage:</p>
+												<a href="https://github.com/kirigaine/Tank-Test-Game">GitHub Repo</a>
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-danger"
+													data-dismiss="modal">Close</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</a>
+							<p style="color:black; text-align: center;"><b>RTS Test</b></p>
+						</div>
+						<div class="col">
+							<a>
+								<img class="project-preview center" data-toggle="modal" data-target="#ms_modal"
+									src="images/ms-preview.jpg">
+								<div id="ms_modal" class="modal fade">
+									<div class="modal-dialog modal-xl">
+										<div class="modal-content">
+											<div class="modal-header">
+												<h2 class="modal-title" style="margin: auto;">Minesweeper</h2>
+												<button type="button" class="close" style="margin:0px;"
+													data-dismiss="modal">&times;</button>
+											</div>
+											<div class="modal-body">
+												<iframe class="center" width="800" height="600" src="https://www.youtube.com/embed/rvXVAmvVa7w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+												<p>Description:</p>
+												<p>Language(s): C</p>
+												<p>Usage:</p>
+												<a href="">GitHub Repo</a>
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-danger"
+													data-dismiss="modal">Close</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</a>
+							<p style="color:black; text-align: center;"><b>Minesweeper</b></p>
+						</div>
+						<p class="container-fluid" style="text-align: center;color:white;">And there's more! Checkout my
+							<a href="https://github.com/kirigaine">GitHub</a>!</p>
+					</div>
+
+				<div class="row">
+
+                    <div class="container-fluid">
+                        <h1>Technical Skills</h1>
+                        <ul><b>
+                                <li>Git/Jira/Bitbucket</li>
+                                <li>Agile/Waterfall</li>
+                                <li>Github Actions CI/CD</li>
+                                <li>Algorithms</li>
+                                <li>Excel/Word/Project</li>
+                                <li>Image Editing</li>
+                                <li>UML Diagramming</li>
+                                <li>Unity 3D</li>
+                                <li>MySQL</li>
+                            </b>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="container-fluid">
+                        <h1>Programming Languages</h1>
+                        <a class="p_languages"
+                            href="https://github.com/kirigaine?tab=repositories&q=&type=&language=python&sort="
+                            target="_blank">Python</a><br>
+                        <a class="p_languages"
+                            href="https://github.com/kirigaine?tab=repositories&q=&type=&language=java&sort="
+                            target="_blank">Java</a>
+                        <a class="p_languages"
+                            href="https://github.com/kirigaine?tab=repositories&q=&type=&language=c&sort="
+                            target="_blank"> C</a><a> / C++ / </a><a class="p_languages"
+                            href="https://github.com/kirigaine?tab=repositories&q=&type=&language=c%23&sort="
+                            target="_blank">C#</a>
+                        <a>Visual Basic</a>
+                        <a>Assembly</a>
+                        <a class="p_languages"
+                            href="https://github.com/kirigaine?tab=repositories&q=&type=&language=html&sort="
+                            target="_blank">HTML/CSS</a>
+                        <a>PHP</a>
+                        <a class="p_languages"
+                            href="https://github.com/kirigaine?tab=repositories&q=&type=&language=javascript&sort="
+                            target="_blank">JavaScript</a>
+                    </div>
+                </div>
+            </div>
+
+            <!--Right Column-->
+            <div class="col-sm-4">
+                <div class="container-fluid">
+                    <h1 style="text-align:center; color:white; margin-bottom:0px;">Dustin P.</h1>
+                    <h3 style="text-align:center; color:lightblue;">&lt;Software Developer&gt;</h2>
+                        <img style="border-radius:50%;max-width:100%;max-height:100%;" src="images/me.jpg">
+                        <p>My passion has always been computers. I grew up playing with them, fixing them, and seeing
+                            all of their potential.
+                            I loved all the games and software that helped people communicate, maintain their health,
+                            facilitate their hobbies, or engineer new creations.
+                            That technology has vastly innovated and improved since I was a child, and I want to be able
+                            to make my own impression on all generations with large-scale projects that have even
+                            greater potential now.
+                            My youthful experiences and dreams drive my learning and dedication to my career to this
+                            day.</p>
+                </div>
             </div>
         </div>
-    </body>
+    </div>
+
+</body>
+
 </html>
-<footer><script> </script></footer>
+<footer>
+    <script> </script>
+</footer>
