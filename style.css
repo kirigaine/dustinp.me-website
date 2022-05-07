@@ -65,13 +65,16 @@ body{
     height: auto;
     cursor: pointer;
     min-width: "200px";
+	padding: 8px;
+	overflow: visible;
 }
 
 .project-preview:hover{
     transform: scale(1.1);
     margin-bottom: 10px;
     transition: 0.4s;
-    border: 1px solid white;
+    border: 2px outset white;
+	border-radius: 5px;
 
 }
 
@@ -85,4 +88,16 @@ body{
 .project-name{
     padding: 15px;
     text-align:center;
+}
+
+.modal-content {
+   background-color: gray;
+}
+
+.modal {
+ overflow-y: auto;
+}
+
+.modal-open {
+ overflow: auto;
 }
