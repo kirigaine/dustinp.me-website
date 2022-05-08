@@ -19,6 +19,11 @@ body{
     margin: 0%;
     box-sizing: border-box;
     position: relative;
+	overflow: hidden;
+}
+
+li, h1, p {
+	color: lightblue;
 }
 
 .header-button:link, .myheader:visited{
@@ -100,4 +105,8 @@ body{
 
 .modal-open {
  overflow: auto;
+}
+
+.row {
+	display: flex;
 }
