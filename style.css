@@ -1,11 +1,13 @@
 *{
     font-family: 'Quicksand', sans-serif;
+	box-sizing: border-box;
 }
 
 header{
     background-color:rgba(30,30,30,0.6);
     padding-top: 0.2%;
     padding-bottom: 0.5%;
+	width:100%;
 }
 
 body{
@@ -17,96 +19,137 @@ body{
     padding-left: 0%;
     padding-right: 0%;
     margin: 0%;
-    box-sizing: border-box;
     position: relative;
-	overflow: hidden;
 }
 
-li, h1, p {
+li, h1, p, h2{
 	color: lightblue;
+	text-align:center;
 }
 
-.header-button:link, .myheader:visited{
-    font: size 25px;
-    color:white;
-    background-color: rgba(0,0,0,0.0);
-    border-style: groove;
-    border-color: rgba(255,255,255,0.2);
-    padding:15px 25px;
-    text-align:center;
-    text-decoration:none;
-    display:inline-block;
+h2{
+	color: lightblue;
+	text-align:center;
+	background-color:rgba(30,30,30,0.6);
+	padding-bottom:3px;
+	padding-top:3px;
 }
 
-.header-button:hover{
-    background-color:#b4b4b4;
-    text-shadow: 2px 2px gray;
-    color:black;
-    transition: 0.5s;
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
-.header-button:not(:hover){
-    background-color: rgba(0,0,0,0.0);
-    color:white;
-    transition: 1.0s;
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+  
 }
 
-.p_languages:link, .p_languages:visited{
-    text-shadow: 1px 1px white;
-    background-color:white;
-    border-style: outset;
-    font-size: 20px
+header{
+	display:none;
 }
 
-.center{
-    display:block;
-    margin-left: auto;
-    margin-right: auto;
+/* Style the navigation menu */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
 }
 
-.project-preview{
-    vertical-align: top;
-    width: 70%;
-    height: auto;
-    cursor: pointer;
-    min-width: "200px";
-	padding: 8px;
-	overflow: visible;
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
 }
 
-.project-preview:hover{
-    transform: scale(1.1);
-    margin-bottom: 10px;
-    transition: 0.4s;
-    border: 2px outset white;
-	border-radius: 5px;
-
+/* Style navigation menu links */
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
 }
 
-.project-preview:not(:hover){
-    width: 70%;
-    transition: 0.4s;
-    min-width: "200px";
-
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
 }
 
-.project-name{
-    padding: 15px;
-    text-align:center;
+/* Style the active link (or home/logo) */
+.active {
+  background-color: gray;
+  color: white;
 }
 
-.modal-content {
-   background-color: gray;
+button{
+	margin: 4px auto;
+	font-size: 15px;
+	padding: 1px !important;
+	background-color:lightblue;
+	border-style: groove; 
+	border-color: rgba(255,255,255,0.2); 
+	border-radius:3px;
+	margin-bottom: 5px;
+	font-weight:bold;
 }
 
-.modal {
- overflow-y: auto;
+@media only screen and (min-width: 768px) {
+  
+	#header{
+	display:inline-block;
+	}
+	
+	.topnav{
+		display:none;
+	}
+	.topnav #myLinks{
+		display:none;
+	}
+		
+	.header-tag{
+		background-color:#b4b4b4;
+		color:black;
+		margin:0px;
+		border-style: groove; 
+		border-color: rgba(255,255,255,0.2); 
+		border-radius:3px; 
+		border-bottom-left-radius:25px; 
+		padding:15px 25px; 
+		display:inline-block;
+	}
+
+	.header-button:link, .myheader:visited{
+		font: size 25px;
+		color:white;
+		background-color: rgba(0,0,0,0.0);
+		border-style: groove;
+		border-color: rgba(255,255,255,0.2);
+		padding:15px 25px;
+		text-align:center;
+		text-decoration:none;
+		display:inline-block;
+	}
+
+	.header-button:hover{
+		background-color:#b4b4b4;
+		text-shadow: 2px 2px gray;
+		color:black;
+		transition: 0.5s;
+	}
+
+	.header-button:not(:hover){
+		background-color: rgba(0,0,0,0.0);
+		color:white;
+		transition: 1.0s;
+	}
+	
+	[class*="col-"] {
+  float: left;
+  padding: 15px;
+  border: 0px solid red;
 }
 
-.modal-open {
- overflow: auto;
-}
-
-.row {
-	display: flex;
 }
