@@ -58,6 +58,12 @@ header{
   position: relative;
 }
 
+.project-preview:hover{
+	outline-width:2px;
+	outline-color:lightblue;
+	outline-style:solid;
+}
+
 /* Hide the links inside the navigation menu (except for logo/home) */
 .topnav #myLinks {
   display: none;
@@ -84,7 +90,7 @@ header{
   color: white;
 }
 
-button{
+.button, .button_broke, a.button:visited{
 	margin: 4px auto;
 	font-size: 15px;
 	padding: 1px !important;
@@ -94,6 +100,33 @@ button{
 	border-radius:3px;
 	margin-bottom: 5px;
 	font-weight:bold;
+	text-align:center;
+	color:black;
+}
+
+a.button_broke:hover{
+	background-color:grey;
+	color: black;
+	cursor: not-allowed;
+	text-decoration: none;
+}
+
+a.button:hover {
+	background-color:rgba(100,200,255,255);
+	text-decoration: none;
+}
+
+.button_ghub {
+    display: block;
+    width: 115px;
+    height: 25px;
+    background: #4E9CAF;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    line-height: 25px;
 }
 
 @media only screen and (min-width: 768px) {

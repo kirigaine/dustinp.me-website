@@ -27,7 +27,7 @@
         <div>
             <p class="header-tag"><b>&lt;/dustinp.me&gt;</b></p>
             <a class="header-button" href=""><b>Resume</b></a>
-            <a class="header-button" href="" target="_blank"><b>LinkedIn</b></a>
+            <a class="header-button" href=""><b>LinkedIn</b></a>
             <a class="header-button" href="https://github.com/kirigaine" target="_blank"><b>GitHub</b></a>
             <a class="header-button" style="border-bottom-right-radius:25px" href="mailto: thisisntarealemail@gmail.com" target="_top"><b>Contact</b></a>
         </div>
@@ -87,21 +87,19 @@
 			<h1>Dustin P.</h1>
 			<h2>&lt;Software Developer&gt;</h2>
 			<img src="images/me.svg"></img>
-			<p style="font-size:20px">Software is my passions.
-			I currently am a Dairy Manager and Receiving Manager at a grocery store.
-			I'd like to get back into field of passion. Lately fitness has been a hobby of mine.
-			Outside of work I'm working out, programming, or hanging with friends and family.</p>
+			<p style="font-size:20px">I'm currently a dairy manager for my local grocery store. I'm working towards my field of passion: <b>software</b>.
+			Lately fitness and self-improvement are my major hobbies. Outside of work I'm exercising, learning/programming, or socializing with friends and family.</p>
 			<div class="row">
-				<button id="btnPython" class="col-md-2" href="https://github.com/kirigaine?tab=repositories&q=&type=&language=html&sort=" target="_blank">Python</button>
-				<button class="col-md-2">Java</button>
-				<button class="col-md-2">C</button>
-				<button class="col-md-2">C#</button>
+				<a id="btnPython" class="col-md-2 button" href="https://github.com/kirigaine?tab=repositories&q=&type=&language=python&sort=" target="_blank">Python</a>
+				<a id="btnJava" class="col-md-2 button" href="https://github.com/kirigaine?tab=repositories&q=&type=&language=java" target="_blank">Java</a>
+				<a id="btnC" class="col-md-2 button" href="https://github.com/kirigaine?tab=repositories&q=&type=&language=c" target="_blank">C</a>
+				<a id="btnCSharp" class="col-md-2 button" href="https://github.com/kirigaine?tab=repositories&q=&type=&language=c%23" target="_blank">C#</a>
 			</div>
 			<div class="row">
-				<button class="col-md-2">HTML/CSS</button>
-				<button class="col-md-2">JavaScript</button>
-				<button class="col-md-2">VBasic</button>
-				<button class="col-md-2">GDScript</button>
+				<a id="btnHTML" class="col-md-2 button" href="https://github.com/kirigaine?tab=repositories&q=&type=&language=html&sort=" target="_blank">HTML/CSS</a>
+				<a id="btnJS" class="col-md-2 button" href="https://github.com/kirigaine?tab=repositories&q=&type=&language=javascript" target="_blank">JavaScript</a>
+				<a id="btnVB" class="col-md-2 button_broke">VBasic</a>
+				<a id="btnGD" class="col-md-2 button" href="https://github.com/kirigaine?tab=repositories&q=&type=&language=gdscript" target="_blank">GDScript</a>
 			</div>
 		</div>
 	</div>
@@ -125,6 +123,10 @@
 		<!-- TODO: Either figure this function out or make the <button>'s <a>'s with css> -->
 		function test(){
 			<input type="button" id="btnPython" onclick="location.href='https://github.com/kirigaine?tab=repositories&q=&type=&language=html&sort=';" value="Go to Google" />
+		}
+		
+		function inDevelopment(){
+			alert("This feature is still in development. Please try again later! Thanks!");
 		}
 	</script>
 </footer>
