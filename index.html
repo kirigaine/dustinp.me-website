@@ -1,132 +1,112 @@
-<!DOCTYPE html>
-<html lang="en-US">
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<title>Dustin P Portfolio</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	<body>
 
-<head>
-    <title>&lt;/dustinp.me&gt;</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Quicksand&display=swap" rel="stylesheet">
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <!-- Popper JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-	<!-- Hamburger image -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
-</head>
+  <header>
+    <h1 class="helm">&lt;/dustinp.me&gt;</h1>
+    <nav id="navbar">
+      
+      <ul>
+      <li class="nav-link">
+        <a href="https://dustinp.me">Resume</a>
+      </li>
+      <li class="nav-link">
+        <a id="profile-link" href="https://github.com/kirigaine" target="_blank">GitHub</a>
+      </li>
+      <li class="nav-link">
+        <a href="https://www.linkedin.com/in/dustin-pruitt-176882202/">LinkedIn</a>
+      </li>
+      <li class="nav-link">
+        <a href="#projects">Projects</a>
+      </li>
+      <li class="nav-link">
+        <a href="#langs-and-certs">Certifications</a>
+      </li>
+      </ul>
+    </nav>
+  </header>
 
-<body>
+    <section class="welcome" id="welcome-section">
+      <h1 class="player-name">Dustin</h1>
+      <p class="player-guild"><span>&lt;Software Developer&gt;</span></p>
+      <img class="player-portrait" alt="picture of a guy wearing glasses" src="images/me.svg">
+    </section>
+    <section id="projects">
+    <h1 class="project-header">Projects</h1>
+      <div class="project-container">
 
-	<!-- Desktop Header -->
-    <header id="header">
-        <div>
-            <p class="header-tag"><b>&lt;/dustinp.me&gt;</b></p>
-            <a class="header-button" href=""><b>Resume</b></a>
-            <a class="header-button" href=""><b>LinkedIn</b></a>
-            <a class="header-button" href="https://github.com/kirigaine" target="_blank"><b>GitHub</b></a>
-            <a class="header-button" style="border-bottom-right-radius:25px" href="mailto: thisisntarealemail@gmail.com" target="_top"><b>Contact</b></a>
+        <div class="project-tile">
+          <a class="project-link" href="https://github.com/kirigaine/YouTube-Shield" target="_blank">
+          <img class="project-image" src="images/idlorcs-preview.jpg">
+          </a><h3 class="project-title">Youtube Shield</h3>
         </div>
-    </header>
-	
-	<!-- Mobile Header -->
-	<div class="topnav">
-		<a href="#home" class="active">&lt;/dustinp.me&gt;</a>
-			<div id="myLinks">
-				<a href="#resume">Resume</a>
-				<a href="#linkedin">LinkedIn</a>
-				<a href="https://github.com/kirigaine" target="_blank">GitHub</a>
-				<a href="#contact">Contact</a>
-			</div>
-		<a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
-	</div>
 
-<div class="container-fluid">
-	<div class="row">
-		<!-- Left Column-->
-		<div class="col-md-9">
-			<!-- <h1 style="text-align: center;">Projects</h1> -->
-			<!-- First Row of Projects -->
-			<div class="row">
-			<div class="col-md-4 project">
-				<a href="https://github.com/kirigaine/Socket-Squares" target="_blank"><img id="ss_button" style="width:100%" class="project-preview center" src="images/ss-preview.jpg"></a>
-				<h2>Socket Squares</h2>
-			</div>
-			<div class="col-md-4 project">
-				<a href="https://github.com/kirigaine/Idlorcs-Idle-Clicker-Game" target="_blank"><img id="ss_button" style="width:100%" class="project-preview center" src="images/idlorcs-preview.jpg" ></a>
-				<h2>Idlorcs</h2>
-			</div>
-			<div class="col-md-4 project">
-				<a href="https://github.com/kirigaine/CSharp-Squiggle-Snake-Game" target="_blank"><img id="ss_button" style="width:100%" class="project-preview center" src="images/squiggle-preview.jpg"></a>
-				<h2>Squiggle</h2>
-			</div>
-			</div>
-			<!-- Second Row of Projects -->
-			<div class="row">
-			<div class="col-md-4 project">
-				<a href="https://github.com/kirigaine/Tank-Test-Game" target="_blank"><img id="ss_button" style="width:100%" class="project-preview center" src="images/tdt-preview.jpg"></a>
-				<h2>Tank Drive Test</h2>
-			</div>
-			<div class="col-md-4 project">
-				<a href="" target="_blank"><img id="ss_button" style="width:100%" class="project-preview center" src="images/rtst-preview.jpg"></a>
-				<h2>RTS Test</h2>
-			</div>
-			<div class="col-md-4 project">
-				<a href="https://github.com/kirigaine/C-Minesweeper" target="_blank"><img id="ss_button" style="width:100%" class="project-preview center" src="images/ms-preview.jpg"></a>
-				<h2>Minesweeper</h2>
-			</div>
-			</div>
-		</div>
-	
-		<!-- Right Column-->
-		<div class="col-md-3">
-			<h1>Dustin P.</h1>
-			<h2>&lt;Software Developer&gt;</h2>
-			<img src="images/me.svg"></img>
-			<p style="font-size:20px">I'm currently a dairy manager for my local grocery store. I'm working towards my field of passion: <b>software</b>.
-			Lately fitness and self-improvement are my major hobbies. Outside of work I'm exercising, learning/programming, or socializing with friends and family.</p>
-			<div class="row">
-				<a id="btnPython" class="col-md-2 button" href="https://github.com/kirigaine?tab=repositories&q=&type=&language=python&sort=" target="_blank">Python</a>
-				<a id="btnJava" class="col-md-2 button" href="https://github.com/kirigaine?tab=repositories&q=&type=&language=java" target="_blank">Java</a>
-				<a id="btnC" class="col-md-2 button" href="https://github.com/kirigaine?tab=repositories&q=&type=&language=c" target="_blank">C</a>
-				<a id="btnCSharp" class="col-md-2 button" href="https://github.com/kirigaine?tab=repositories&q=&type=&language=c%23" target="_blank">C#</a>
-			</div>
-			<div class="row">
-				<a id="btnHTML" class="col-md-2 button" href="https://github.com/kirigaine?tab=repositories&q=&type=&language=html&sort=" target="_blank">HTML/CSS</a>
-				<a id="btnJS" class="col-md-2 button" href="https://github.com/kirigaine?tab=repositories&q=&type=&language=javascript" target="_blank">JavaScript</a>
-				<a id="btnVB" class="col-md-2 button_broke">VBasic</a>
-				<a id="btnGD" class="col-md-2 button" href="https://github.com/kirigaine?tab=repositories&q=&type=&language=gdscript" target="_blank">GDScript</a>
-			</div>
-		</div>
-	</div>
-</div>
+        <div class="project-tile">
+          <a class="project-link" href="https://github.com/kirigaine/Socket-Squares" target="_blank">
+          <img class="project-image" src="images/ss-preview.jpg">
+          </a><h3 class="project-title">Socket Squares</h3>
+        </div>
 
-</body>
+        <div class="project-tile">
+          <a class="project-link" href="https://github.com/kirigaine/CSharp-Squiggle-Snake-Game" target="_blank">
+          <img class="project-image" src="images/squiggle-preview.jpg">
+          </a><h3 class="project-title">Squiggle</h3>
+        </div>
 
+        <div class="project-tile">
+          <a class="project-link" href="https://github.com/kirigaine/C-Minesweeper" target="_blank">
+          <img class="project-image" src="images/ms-preview.jpg">
+          </a><h3 class="project-title">Minesweeper</h3>
+        </div>
+
+        <div class="project-tile">
+          <a class="project-link" href="https://dustinp.me/" target="_blank">
+          <img class="project-image" src="images/rtst-preview.jpg">
+          </a><h3 class="project-title">RTS Test</h3>
+        </div>
+
+        <div class="project-tile">
+          <a class="project-link" href="https://github.com/kirigaine/Tank-Test-Game" target="_blank">
+          <img class="project-image" src="images/tdt-preview.jpg">
+          </a><h3 class="project-title">Tank Drive Test</h3>
+        </div>
+
+      </div>
+    </section>
+  <section id="langs-and-certs">
+    <div class="languages-container">
+      <h1 class="lang-title">Languages</h1>
+      <ul class="languages">
+        <li>Python</li>
+        <li>Java</li>
+        <li>C</li>
+        <li>C#</li>
+        <li>HTML/CSS</li>
+        <li>GDScript</li>
+      </ul>
+    </div>
+    <div class="certifications-container">
+      <h1 class="cert-title">Certifications</h1>
+      <ul class="certifications">
+	      <li><a href="https://www.freecodecamp.org/certification/tholen2147/responsive-web-design" target="_blank">FCC HTML & CSS</a></li>
+        <li>More to follow...</li>
+      </ul>
+    </div>
+  </section>
 <footer>
-    <script> 
-	
-		/* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
-		function myFunction() {
-		  var x = document.getElementById("myLinks");
-		  if (x.style.display === "block") {
-			x.style.display = "none";
-		  } else {
-			x.style.display = "block";
-		  }
-		}
-		
-		<!-- TODO: Either figure this function out or make the <button>'s <a>'s with css> -->
-		function test(){
-			<input type="button" id="btnPython" onclick="location.href='https://github.com/kirigaine?tab=repositories&q=&type=&language=html&sort=';" value="Go to Google" />
-		}
-		
-		function inDevelopment(){
-			alert("This feature is still in development. Please try again later! Thanks!");
-		}
-	</script>
+  <a href="https://github.com/kirigaine" target="_blank" class="fa fa-github"></a>
+  <a href="https://www.linkedin.com/in/dustin-pruitt-176882202/" class="fa fa-linkedin"></a>
+
+
 </footer>
+
+	</body>
+</html>
+
