@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<title>Pokedex Search</title>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Press+Start+2P&display=swap" rel="stylesheet">
+	</head>
+	<body>
+
+    <div class="user-controls">
+      <h2>Search for Pokemon Name or ID:</h2>
+    <input id="search-input" required></input>
+    <button id="search-button">Search</button>
+</div>
+
+<h3>Use ENTER to search quickly</h3>
+<h3>Hint: Try clicking the picture after your search!</h3>
+
+<div class="pokemon-info">
+  <div class="pokedex left">
+  <div class="topbar">
+  <div class="camera"></div>
+  <div class="light1"></div>
+  <div class="light2"></div>
+  <div class="light3"></div>
+  </div>
+  <div class="pokemon-image">
+
+    <img id="sprite" class="hidden" src=""/>
+  </div>
+  <div class="pokemon-description">
+  <div>
+    <label class="hidden">Name:</label>
+    <p id="pokemon-name"></p>
+  </div>
+  <div class="id">
+    <label class="hidden">ID:</label>
+    <p id="pokemon-id"></p>
+  </div>
+  </div>
+  </div>
+  <div class="pokedex right">
+  <div class="screen">
+  <div>
+    <label class="hidden">Weight:</label>
+    <p id="weight"></p>
+  </div>
+  
+  <div>
+    <label class="hidden">Height:</label>
+    <p id="height"></p>
+  </div>
+  <div class="types">
+    <label class="hidden">Types:</label>
+    <p id="types"></p>
+  </div>
+  <div>
+    <label class="hidden">HP:</label>
+    <p id="hp"></p>
+  </div>
+  <div>
+    <label class="hidden">ATT:</label>
+    <p id="attack"></p>
+  </div>
+  <div>
+    <label class="hidden">DEF:</label>
+    <p id="defense"></p>
+  </div>
+  <div>
+    <label class="hidden">SP.ATT:</label>
+    <p id="special-attack"></p>
+  </div>
+  <div>
+    <label class="hidden">SP.DEF:</label>
+
+    <p id="special-defense"></p>
+  </div>
+  <div>
+    <label class="hidden">SPD:</label>
+    <p id="speed"></p>
+  </div>
+  </div>
+  </div>
+</div>
+<button id="help-button">?</button>
+		<script src="script.js"></script>
+	</body>
+</html>
+
